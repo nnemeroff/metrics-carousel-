@@ -1,0 +1,32 @@
+{
+  "name": "@clarivant/metrics-carousel",
+  "version": "0.1.0",
+  "description": "Reusable Key Metrics carousel component (Tailwind CSS compatible)",
+  "author": "Clarivant Data",
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "tsup": "^8",
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "tsup src/index.tsx --dts --format cjs,esm --sourcemap --clean",
+    "prepare": "npm run build"
+
+}
+
+
