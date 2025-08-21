@@ -26,7 +26,5 @@
   "scripts": {
     "build": "tsup src/index.tsx --dts --format cjs,esm --sourcemap --clean",
     "prepare": "npm run build"
-
+  }
 }
-
-
