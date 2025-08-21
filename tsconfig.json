@@ -1,5 +1,4 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "composite": false,
     "incremental": false,
@@ -13,7 +12,9 @@
     "strict": true,
     "moduleResolution": "bundler",
     "module": "ESNext",
-    "target": "ES2019"
+    "target": "ES2019",
+    "lib": ["dom", "es2020"],
+    "types": ["react", "react-dom"]
   },
   "include": ["src/**/*"]
 }

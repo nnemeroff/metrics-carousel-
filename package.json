@@ -20,6 +20,8 @@
     "react-dom": ">=18"
   },
   "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "tsup": "^8",
     "typescript": "^5"
   },
